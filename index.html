@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>🌸💖 Oráculo de Gilda 💖🌸</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #ffe6f0, #fff0f5);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      color: #880e4f;
+      text-align: center;
+      padding: 30px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #d81b60;
+      text-shadow: 1px 1px 2px #f8bbd0;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    button {
+      background-color: #f48fb1;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      border-radius: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #f06292;
+    }
+
+    #respuesta {
+      margin-top: 30px;
+      font-size: 1.5em;
+      color: #ad1457;
+      background: #fce4ec;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      min-height: 60px;
+    }
+
+    .decoracion {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .gilda-img {
+      max-width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="decoracion">💐💖🦋✨🌸</div>
+  <img src="corazon-valiente.jpg" alt="Gilda - Corazón Valiente" class="gilda-img">
+  <h1>🌸💖 Oráculo de Gilda 💖🌸</h1>
+  <p>Consultá con amor y fe. Gilda te escucha desde el escenario eterno 🎤🦋</p>
+  <button onclick="consultar()">Invocar a Gilda 💖</button>
+  <div id="respuesta"></div>
+
+  <script>
+    const respuestasGilda = [
+      "No me arrepiento de este amor 💘",
+      "Fuiste 💔",
+      "Se me ha perdido un corazón 💖",
+      "Corazón herido 💔",
+      "La puerta 🌙",
+      "Paisaje 🌄",
+      "Estoy sola otra vez 😢",
+      "No es mi despedida 🌈",
+      "Un día más de vida ✨",
+      "Me arrepiento de este amor 💫",
+      "Junto a ti 🌹",
+      "Como tú 🌟",
+      "Lo que siento por ti 💞",
+      "Ámame hasta con los dientes 😄",
+      "Rompo las cadenas 🔓",
+      "La pollera amarilla 💛",
+      "No te quedes afuera 💖",
+      "Bailando sin parar 💃",
+      "Beso a beso 💋",
+      "Sólo vos 💘",
+      "Amor clandestino 🌒",
+      "Te vas 💔",
+      "Reencuentro 🎶",
+      "Mi peor error 😢",
+      "Me muero por vos 💘",
+      "Amor sin límites 🌈",
+      "No es culpa mía 💔",
+      "Te quiero 💞",
+      "Gritando amor 💖",
+      "Amor de mujer 🌹",
+      "No te olvides de mí 🦋",
+      "Por siempre Gilda ✨",
+      "La pasión 💘",
+      "Si hay alguien que te quiere 💫",
+      "Te necesito 💔",
+      "Amor y pasión 💃",
+      "No me dejes 💞",
+      "Volveré 🌙",
+      "Te amo 💘",
+      "Amor verdadero 💖",
+      "Sin querer 💫",
+      "Te extraño 💔",
+      "Amor eterno 🌹",
+      "No puedo olvidarte 😢",
+      "Te espero 💘",
+      "Amor prohibido 🌒",
+      "Te encontré 💖",
+      "Amor del bueno 💞",
+      "Te llevo en mi alma ✨",
+      "Siempre estarás conmigo 🌈"
+    ];
+
+    function consultar() {
+      const indice = Math.floor(Math.random() * respuestasGilda.length);
+      document.getElementById("respuesta").innerText = respuestasGilda[indice];
+    }
+  </script>
+</body>
+</html>
